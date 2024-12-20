@@ -1,0 +1,152 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Darker text color for readability */
+    background-color: #2f2f2f; /* Dark background for a more masculine feel */
+}
+
+/* Header Section */
+header {
+    height: 200px;
+    background: linear-gradient(135deg, #4a4a4a, #1a1a1a); /* Darker gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+header h1 {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 30px;
+    background: #404040; /* Dark gray background for intro */
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in;
+    color: #e4e4e4; /* Lighter text for contrast */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Buttons Section */
+.choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.choices a {
+    display: inline-block;
+    background-color: #2a2a2a; /* Dark button background */
+    color: #00aaff; /* Sky blue text for fun accents */
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.choices a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #1a1a1a; /* Slightly darker on hover */
+    color: #00ccff; /* Lighter sky blue on hover */
+}
+
+/* Description Section */
+.description {
+    padding: 30px;
+    background: #353535; /* Darker background for description */
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    line-height: 1.6;
+    color: #d4d4d4; /* Light gray text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Visit Counter (Just Above Footer) */
+.visit-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 1em;
+    color: white;
+}
+
+.visit-counter img {
+    margin-right: 10;
+}
+
+/* Home Button Styling (For Pages 1, 2, 3, 4) */
+.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #4b3621; /* Adjust the color as needed */
+}
+
+.home-button img {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.home-button a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optional: Adjust the home button text color, size, or background */
+.home-button span {
+    color: #4b3621; /* You can change this to white or another color */
+}
